@@ -742,9 +742,9 @@ PRODUCT_PACKAGES += \
     IWlanService \
     SoterService \
     TimeService \
-    PowerOffAlarm \
     HotwordEnrollmentOKGoogleHEXAGON \
     HotwordEnrollmentXGoogleHEXAGON \
+    PowerOffAlarm \
     QtiTelephonyService \
     WfdService \
     dpmserviceapp \
