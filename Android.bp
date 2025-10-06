@@ -1386,11 +1386,11 @@ cc_prebuilt_library_shared {
 		none: true,
 	},
 	target: {
-		: {
+		android_arm: {
 			srcs: ["proprietary/vendor/lib/soundfx/libspatialaudio.so"],
 			shared_libs: [ ],
 		},
-		: {
+		android_arm64: {
 			srcs: ["proprietary/vendor/lib64/soundfx/libspatialaudio.so"],
 			shared_libs: [ ],
 		},
@@ -1572,7 +1572,7 @@ cc_prebuilt_library_shared {
 		none: true,
 	},
 	target: {
-		: {
+		android_arm: {
 			srcs: ["proprietary/vendor/lib/c2.dolby.avc.dec.so"],
 			shared_libs: [ ],
 		},
@@ -1589,7 +1589,7 @@ cc_prebuilt_library_shared {
 		none: true,
 	},
 	target: {
-		: {
+		android_arm: {
 			srcs: ["proprietary/vendor/lib/c2.dolby.avc.sec.dec.so"],
 			shared_libs: [ ],
 		},
@@ -1606,7 +1606,7 @@ cc_prebuilt_library_shared {
 		none: true,
 	},
 	target: {
-		: {
+		android_arm: {
 			srcs: ["proprietary/vendor/lib/c2.dolby.client.so"],
 			shared_libs: [ ],
 		},
@@ -1623,7 +1623,7 @@ cc_prebuilt_library_shared {
 		none: true,
 	},
 	target: {
-		: {
+		android_arm: {
 			srcs: ["proprietary/vendor/lib/c2.dolby.egl.so"],
 			shared_libs: [ ],
 		},
@@ -1640,7 +1640,7 @@ cc_prebuilt_library_shared {
 		none: true,
 	},
 	target: {
-		: {
+		android_arm: {
 			srcs: ["proprietary/vendor/lib/c2.dolby.hevc.dec.so"],
 			shared_libs: [ ],
 		},
@@ -1657,7 +1657,7 @@ cc_prebuilt_library_shared {
 		none: true,
 	},
 	target: {
-		: {
+		android_arm: {
 			srcs: ["proprietary/vendor/lib/c2.dolby.hevc.sec.dec.so"],
 			shared_libs: [ ],
 		},
@@ -1674,7 +1674,7 @@ cc_prebuilt_library_shared {
 		none: true,
 	},
 	target: {
-		: {
+		android_arm: {
 			srcs: ["proprietary/vendor/lib/c2.dolby.store.so"],
 			shared_libs: [ ],
 		},
@@ -1880,7 +1880,7 @@ cc_prebuilt_library_shared {
 		none: true,
 	},
 	target: {
-		: {
+		android_arm: {
 			srcs: ["proprietary/vendor/lib/libdolbyottcameracontrol.so"],
 			shared_libs: [ ],
 		},
@@ -1897,7 +1897,7 @@ cc_prebuilt_library_shared {
 		none: true,
 	},
 	target: {
-		: {
+		android_arm: {
 			srcs: ["proprietary/vendor/lib/libdovi.so"],
 			shared_libs: [ ],
 		},
@@ -2573,23 +2573,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-	name: "vendor.qti.hardware.wifidisplaysession@1.0",
-	owner: "xiaomi",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm: {
-			srcs: ["proprietary/vendor/lib/vendor.qti.hardware.wifidisplaysession@1.0.so"],
-			shared_libs: ["libhidlbase", "liblog", "libutils", "libcutils", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "32",
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
 	name: "vendor.qti.hardware.wifidisplaysessionl@1.0-halimpl",
 	owner: "xiaomi",
 	strip: {
@@ -2616,23 +2599,6 @@ cc_prebuilt_library_shared {
 		android_arm64: {
 			srcs: ["proprietary/vendor/lib64/android.hardware.secure_element@1.0-impl.so"],
 			shared_libs: ["libhidlbase", "libutils", "liblog", "libhardware", "libbase", "libcutils", "libhwbinder", "libcrypto", "vendor.xiaomi.hardware.mtdservice@1.0", "android.hardware.secure_element@1.0", "libGPTEE_vendor", "vendor.qti.esepowermanager@1.0", "vendor.qti.esepowermanager@1.1", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "64",
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "com.qualcomm.qti.dpm.api@1.0",
-	owner: "xiaomi",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/com.qualcomm.qti.dpm.api@1.0.so"],
-			shared_libs: ["libhidlbase", "liblog", "libutils", "libcutils", "libc++", "libc", "libm", "libdl", ],
 		},
 	},
 	compile_multilib: "64",
@@ -4003,7 +3969,7 @@ cc_prebuilt_library_shared {
 		none: true,
 	},
 	target: {
-		: {
+		android_arm: {
 			srcs: ["proprietary/vendor/lib64/libloc_api_wds.so"],
 			shared_libs: [ ],
 		},
@@ -6761,23 +6727,6 @@ cc_prebuilt_library_shared {
 		android_arm64: {
 			srcs: ["proprietary/vendor/lib64/vendor.qti.imsrtpservice@3.0-service-Impl.so"],
 			shared_libs: ["liblog", "libcutils", "libbase", "libutils", "libhardware_legacy", "libhardware", "libhidlbase", "libdiag", "vendor.qti.imsrtpservice@3.0", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "64",
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "vendor.qti.imsrtpservice@3.0",
-	owner: "xiaomi",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/vendor.qti.imsrtpservice@3.0.so"],
-			shared_libs: ["libhidlbase", "liblog", "libutils", "libcutils", "libc++", "libc", "libm", "libdl", ],
 		},
 	},
 	compile_multilib: "64",
